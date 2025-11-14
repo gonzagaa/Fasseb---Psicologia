@@ -1,0 +1,96 @@
+#sobre {
+    overflow: hidden;
+    position: relative;
+}
+
+#sobre .image img {
+    width: 100%;
+}
+
+#sobre header {
+    margin-top: 3rem;
+}
+
+#sobre header h3 {
+    color: #000;
+    font-size: 1.5rem;
+    margin-top: .5rem;
+    font-weight: 500;
+    background: #cacaca;
+    padding: 2rem;
+    padding-inline: 4rem;
+    border-radius: 1rem;
+}
+
+#sobre header h3 span {
+    color: var(--orange);
+}
+
+#sobre header p {
+    margin-top: 1rem;
+    line-height: 1.6;
+    font-size: 1.5rem;
+}
+
+#sobre a button {
+    margin-top: 2rem;
+}
+
+#sobre header p span {
+    color: #252525;
+    font-weight: 800;
+}
+
+#sobre .image {
+    display: flex;
+    flex-direction: column;
+    gap: .6rem;
+}
+
+#sobre .image img {
+    border-radius: 1rem;
+}
+
+#sobre .image .row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: .6rem;
+}
+
+#sobre .image .row img {
+    aspect-ratio: 16/11;
+    object-fit: cover;
+}
+
+#sobre .image .row iframe {
+    width: 100%;
+    border-radius: 1rem;
+
+    aspect-ratio: 16/11;
+    object-fit: cover;
+}
+
+@media (min-width: 1080px) {
+    section#sobre .content {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 8rem;
+        align-items: center;
+    }
+
+    section#sobre header {
+        margin-top: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        text-align: left;
+    }
+
+    section#sobre .image .row img {
+        aspect-ratio: 16/9;
+    }
+
+    section#sobre .image .row iframe {
+        aspect-ratio: 16/9;
+    }
+}

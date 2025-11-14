@@ -1,0 +1,144 @@
+#etapas {
+    background: var(--black-700);
+    position: relative;
+}
+
+#etapas header {
+    margin-bottom: 5rem;
+}
+
+#etapas .cards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#etapas .cards .card {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  text-align: start;
+
+  position: relative;
+  width: 100%;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 5rem;
+
+  background: var(--bg-white);
+  border-top: 1px solid #48484880;
+  padding-block: 4rem;
+  min-height: 20rem;
+  max-height: 20rem;
+}
+
+#etapas .cards .card span {
+  color: var(--orange);
+  font-size: 2rem;
+  opacity: .7;
+  font-weight:600;
+}
+
+#etapas .cards .card h3 {
+    position: relative; 
+    z-index: 2;
+    font-size: 2rem;
+    color: #252525;
+
+    margin-top: 1rem;
+}
+
+#etapas .cards .card p {
+color: #252525;
+  font-size: 1.4rem;
+  font-weight: 400;
+  margin-top: .5rem;
+}
+
+#etapas .cards .card a {
+  text-decoration: none;
+}
+
+#etapas a button {
+    margin-top: 2rem;
+}
+
+@media (min-width: 1080px) {
+  
+    section#etapas .cards .card {
+      width: 100%;
+      display: grid;
+      grid-template-columns: .1fr 2fr 3fr;
+      align-items: center;
+      justify-content: flex-end;
+      gap: 7rem;
+      padding-block: 5rem;
+      min-height: initial;
+
+      position: initial;
+
+      overflow-y: hidden;
+    }
+
+    section#etapas .cards .card:hover span,
+    section#etapas .cards .card:hover h3 {
+      transform: translateX(20px);
+      opacity: .5;
+    }
+
+
+    section#etapas .cards .card span {
+      font-size: 6rem;
+      opacity: 1;
+      transition: all 700ms ease-in-out;
+      color: var(--orange);
+      mask-image: initial;
+    font-weight: 300;
+    }
+
+    section#etapas .cards .card h3 {
+      transition: all 700ms ease-in-out;
+      margin-top: initial;
+      font-size: 2.5rem;
+    }
+
+    section#etapas .cards .card p {
+      position: relative;
+      margin-top: 0;
+      font-size: 1.6rem;
+    }
+
+    section#etapas .cards .card p::before {
+      content: '';
+      position: absolute;
+      height: 20rem;
+      width: 3px;
+      background: var(--orange);
+      left: -2rem;
+      bottom: 100%;
+      border-radius: 2rem;
+      opacity: 0;
+      transition: all 700ms ease-in-out;
+    }
+
+    section#etapas .cards .card:hover p::before {
+      bottom: 50%;
+      opacity: 1;
+    }
+
+    section#etapas .cards .card a {
+      display: flex;
+      justify-content: end;
+    }
+
+    section#etapas .cards .card a button {
+      margin-top: 0;
+      font-size: 1.5rem;
+      padding: 1.5rem 3rem;
+
+    background: linear-gradient(to right, #ffffff1f 30%, #ffffff14);
+    border: 1px solid #ffffff7b;
+    color: #fff;
+    }
+   
+  }

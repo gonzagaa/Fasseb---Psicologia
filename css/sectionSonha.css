@@ -1,0 +1,93 @@
+#sonha {
+    overflow: hidden;
+    position: relative;
+}
+
+#sonha .image img {
+    width: 100%;
+    border-radius: 2rem;
+}
+
+#sonha header {
+}
+
+#sonha header h2 {
+    font-size: 2.2rem;
+}
+
+#sonha header p {
+    margin-top: 1rem;
+    font-size: 1.4rem;
+}
+
+#sonha a button {
+    margin-top: 2rem;
+}
+
+#sonha .topics {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    text-align: left;
+    gap: .5rem;
+
+    margin-top: 2rem;
+}
+
+#sonha .topics .topic {
+    padding: 1.5rem;
+    border-radius: 1rem;
+    background: #e2e2e2;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+#sonha .topics .topic ion-icon {
+    color: #AA2318;
+    font-size: 2rem;
+}
+
+#sonha .topics .topic p {
+    color: #252525;
+    font-weight: 400;
+    margin-top: 0;
+}
+
+#sonha .topics .topic p span {
+    color: #252525;
+    font-weight: 700;
+}
+
+@media (min-width: 1080px) {
+    section#sonha .content {
+    }
+
+    section#sonha header {
+        margin-top: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    section#sonha .topics {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-items: center;
+        justify-content: center;
+    }
+
+    section#sonha .topics .topic {
+        width: 100%;
+    }
+
+    section#sonha .topics .topic:last-child {
+    }
+
+    section#sonha header h2 {
+        font-size: 4rem;
+
+        padding-inline: 10%;
+    }
+}
