@@ -4,6 +4,10 @@
     padding-block: 8rem;
 }
 
+#faq header h2 {
+    color: #000;
+}
+
 .custom-shape-divider-top-1736976335 {
     position: absolute;
     top: 0;
@@ -50,9 +54,6 @@
     margin-bottom: 5rem;
 }
 
-#faq header h2 {
-    color: #fff;
-}
 
 #faq header p {
     color: #fff;
