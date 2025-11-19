@@ -150,7 +150,7 @@
   }
 
   header#home img.logo {
-    width: 20rem;
+    width: 15rem;
   }
 
   header#home img.bg {
@@ -199,7 +199,7 @@
   }
 
   header#home .content h1 {
-    font-size: 4.5rem;
+    font-size: 4rem;
     line-height: 1;
 
     margin-top: 1.5rem;
@@ -225,6 +225,6 @@
   }
 
   header#home .content h1 {
-    font-size: 6rem;
+    font-size: 5rem;
   }
 }

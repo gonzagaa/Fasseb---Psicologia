@@ -1,5 +1,5 @@
 .btn-whatsapp-pulse {
-	background: var(--gradient);
+	background: linear-gradient(135deg, #AA2318 0%, #DF2718 100%);
 	color: white;
 	position: fixed;
 	bottom: 20px;
@@ -28,7 +28,7 @@
 
 @keyframes pulse {
 	0% {
-		box-shadow: 0 0 0 0 rgba(189, 254, 219, 0.5);
+		box-shadow: 0 0 0 0 #AA2318;
 	}
 	80% {
 		box-shadow: 0 0 0 14px rgba(37, 211, 102, 0);
@@ -46,7 +46,7 @@
 	position: absolute;
 	border-radius: 50%;
 	padding: 25px;
-	border: 5px solid #89f7aa;
+	border: 5px solid #AA2318;
 	opacity: 0.75;
 	animation-name: pulse-border;
 	animation-duration: 1.5s;
@@ -79,7 +79,7 @@
 
 .buttonWpp h3 {
     color: #fff;
-    background: var(--primary-color);
+    background: #AA2318;
 
     font-size: 1.5rem;
     font-weight: 400;
@@ -88,7 +88,6 @@
 
     margin-bottom: 1.7rem;
     margin-right: 6rem;
-    border: 1px solid var(--primary-color);
 
     animation: online infinite ease-in-out 12s;
 }
